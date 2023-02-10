@@ -30,7 +30,6 @@ async getGifts(){
 }
 
 async handleGiftSubmit(){
-    event?.preventDefault()
     let form = event?.target
     let formData = getFormData(form)
     await giftsService.handleGiftSubmit(formData)
@@ -38,6 +37,10 @@ async handleGiftSubmit(){
 
 async openGift(giftID){
     await giftsService.openGift(giftID)
+}
+
+async deleteGift(giftID){
+    await giftsService.deleteGift(giftID)
 }
 
 }
