@@ -1,0 +1,11 @@
+/* BASIC STYLES HERE */
+
+img{
+    height: 400px;
+    width: auto;
+    cursor: pointer;
+}
+
+.hundo{
+    height: 100vh;
+}
